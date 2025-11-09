@@ -62,7 +62,7 @@ ARG RAILPACK_VERSION=0.10.0
 RUN curl -sSL https://railpack.com/install.sh | bash
 
 # Install buildpacks
-COPY --from=buildpacksio/pack:0.35.0 /usr/local/bin/pack /usr/local/bin/pack
+COPY --from=buildpacksio/pack:0.38.2 /usr/local/bin/pack /usr/local/bin/pack
 
 EXPOSE 3000
 CMD [ "pnpm", "start" ]
